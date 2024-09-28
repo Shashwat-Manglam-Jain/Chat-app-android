@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625038061936",
+    "project_id": "chat-anuj",
+    "storage_bucket": "chat-anuj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625038061936:android:c16129097fc45cc205dfb5",
+        "android_client_info": {
+          "package_name": "com.example.chatanuj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCAnI67ZnwvSMzuPEQb0mOlx9jJd_UkDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

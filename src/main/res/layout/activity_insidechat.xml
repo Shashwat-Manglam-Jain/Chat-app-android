@@ -1,0 +1,218 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#584CD7">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#584CD7"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/text"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_margin="15dp"
+            android:foreground="@drawable/baseline_west_24"
+            android:foregroundGravity="center|center_horizontal"
+            app:cardBackgroundColor="#584cd7"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/anuj3"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/message"
+            app:layout_constraintEnd_toStartOf="@+id/message"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stauscolor"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="43dp"
+            android:layout_weight="0.000001"
+            app:cardBackgroundColor="#FF0824"
+            app:cardCornerRadius="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="1"
+                android:text="Shashwat Manglam Jain"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="online"
+                android:textColor="#D1C7C7"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textVie8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_margin="15dp"
+            android:foreground="@drawable/baseline_video_call_24"
+            android:foregroundGravity="center|center_horizontal"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_margin="15dp"
+            android:foreground="@drawable/baseline_call_24"
+            android:foregroundGravity="center|center_horizontal"
+            app:cardCornerRadius="30dp">
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/bground"-->
+    <!--        android:fontFamily="sans-serif-condensed-medium"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:text="Hii Bro"-->
+    <!--        android:textColor="#CDCAF5"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.146"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"-->
+    <!--        app:layout_constraintVertical_bias="0.068" />-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/corner"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Let's chats"
+                android:textColor="#A2A0B8"
+                android:textColorHint="#A2A0B8"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/textVie"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:foreground="@drawable/baseline_yard_24"
+            android:foregroundGravity="center|center_horizontal"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_margin="15dp"
+            android:foreground="@drawable/baseline_send_24"
+            android:foregroundGravity="center|center_horizontal"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/messagesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="72dp"
+        android:scrollIndicators="none"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <LinearLayout
+
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="5dp" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
